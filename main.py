@@ -18,7 +18,10 @@ load_dotenv()
 
 # ========= ENV =========
 BOT_TOKEN = os.getenv("BOT_TOKEN", "").strip()
-CHANNEL_USERNAME = os.getenv("CHANNEL_USERNAME", "@GreatNews_academy").strip()
+CHANNEL_USERNAME = os.getenv("CHANNEL_USERNAME", "Greatnews_academy").strip().lstrip("@")
+
+CHANNEL_LINK = f"https://t.me/{CHANNEL_USERNAME}"   # knopka uchun
+CHANNEL_CHAT = f"@{CHANNEL_USERNAME}"               # obuna tekshirish uchun
 SUPPORT_USERNAME = os.getenv("SUPPORT_USERNAME", "@akrom_GN").strip()
 OFFICE_MAP_URL = os.getenv("OFFICE_MAP_URL", "https://maps.app.goo.gl/L5PAc4TSfgpcAveA7").strip()
 ADMIN_ID = int((os.getenv("ADMIN_ID", "") or "0").strip() or "0")
