@@ -18,7 +18,7 @@ load_dotenv()
 
 # ========= ENV =========
 BOT_TOKEN = os.getenv("BOT_TOKEN", "").strip()
-CHANNEL_USERNAME = os.getenv("CHANNEL_USERNAME", "@GreatNews_academy").strip()  # must start with @
+CHANNEL_USERNAME = os.getenv("CHANNEL_USERNAME", "@GreatNews_academy").strip()
 SUPPORT_USERNAME = os.getenv("SUPPORT_USERNAME", "@akrom_GN").strip()
 OFFICE_MAP_URL = os.getenv("OFFICE_MAP_URL", "https://maps.app.goo.gl/L5PAc4TSfgpcAveA7").strip()
 ADMIN_ID = int((os.getenv("ADMIN_ID", "") or "0").strip() or "0")
